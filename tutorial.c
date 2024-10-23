@@ -146,16 +146,5 @@
 //for every time the code block is runned
 //so the for loop is known as an iterative loop
 //
-#include <stdio.h>
-int main()
-{
-  int x = 0; float y = 0.0; char greetings[] = "Hello World";
-  printf("%d ,%f , %s " , x , y , greetings);
-        int number1; int number2; 
-        scanf("%i ", &number1 );
-        scanf("%i ", &number2 );
-  printf(" %i , %i" ,number1, number2);
-  
-  return 0;
-}
+
 

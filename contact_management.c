@@ -62,14 +62,12 @@ int main() {
                 displayContacts();
                 break;
             case 3:
-                searchContact();
                 break;
             case 4:
             case 5:
                 sortContacts();
                 break;
             case 6:
-                advancedSearch();
                 break;
             case 7:
                 batchAddContacts();
@@ -223,7 +221,7 @@ void displayContacts() {
 
 /**
  * Search for a contact by name, phone, or email.
- */
+ 
 void searchContact() {
     char searchTerm[NAME_LENGTH];
     int found = 0;
@@ -235,7 +233,7 @@ void searchContact() {
     for (int i = 0; i < contactCount; i++) {
         if (strcasecmp(contactList[i].name, searchTerm) != NULL ||
             strcasecmp(contactList[i].phone, searchTerm) != NULL ||
-            strcasecpm(contactList[i].email, searchTerm) != NULL) {
+            strcasecmp(contactList[i].email, searchTerm) != NULL) {
             printf("Contact found:\n");
             printf(" Name: %s\n", contactList[i].name);
             printf(" Phone: %s\n", contactList[i].phone);
@@ -248,7 +246,7 @@ void searchContact() {
         printf("No matching contacts found.\n");
     }
 }
-
+*/
 /**
  * Delete a contact by name.
  */
